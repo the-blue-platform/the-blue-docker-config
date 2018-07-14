@@ -6,7 +6,6 @@ then
     echo "| Please input the tag parameter of image!"
     echo "| latest tag -> is build & pushed by jenkins on default branch."
     echo "|               you can pull it from https://hub.docker.com/r/chariot9/"
-    echo "| uat tag ----> is build & pushed by jenkins on feature branch."
     echo "==================================================================="
     exit 1
 fi
@@ -31,11 +30,7 @@ case $IS_OK in
         exit 1;;
 esac
 
-echo "start building shadow-news"
-sh news/build_news.sh ${TAG}
-echo "end building shadow-news"
-echo ""
-echo "start building shadow-company"
-sh company/build_company.sh ${TAG}
-echo "end building shadow-company"
+echo "start building the-blue-database"
+sh bin/database/build_the_blue_database.sh ${TAG}
+echo "end building the-blue-database"
 echo ""

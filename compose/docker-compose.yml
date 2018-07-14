@@ -1,14 +1,7 @@
-db-news:
-  container_name: db-news
+the-blue-database:
+  container_name: the-blue-database
   environment:
     - MYSQL_ROOT_PASSWORD=developer
-  image: chariot9/db-news:database
+  image: chariot9/the-blue-database:latest
   ports:
     - "3306:3306"
-db-company:
-  container_name: db-company
-  environment:
-    - MYSQL_ROOT_PASSWORD=developer
-  image: chariot9/db-company:database
-  ports:
-    - "3307:3306"
