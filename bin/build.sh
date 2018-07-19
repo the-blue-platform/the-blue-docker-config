@@ -34,3 +34,9 @@ echo "start building the-blue-database"
 sh bin/database/build_the_blue_database.sh ${TAG}
 echo "end building the-blue-database"
 echo ""
+
+
+echo "start building the-blue-apache"
+sh bin/apache/build_the_blue_apache.sh ${TAG}
+echo "end building the-blue-apache"
+echo ""

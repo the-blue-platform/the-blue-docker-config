@@ -11,4 +11,4 @@ then
     exit 1
 fi
 TAG=$1
-docker build --rm -t "the-blue-database:${TAG}" -f dockerfiles/Dockerfile-the-blue-database .
+docker build --rm -t "the-blue-apache:${TAG}" -f dockerfiles/Dockerfile-the-blue-apache .
