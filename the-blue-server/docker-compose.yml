@@ -1,0 +1,12 @@
+version: '2'
+services:
+  the-blue-server:
+    container_name: the-blue-server
+    build: ./files/php
+    image: chariot9/the-blue-server:latest
+    ports:
+      - "9080:80"
+    volumes:
+      - /Users/trungvu/workspace/blue/the-blue:/var/www/html
+    extra_hosts:
+      - "dev_host:10.100.3.13"

@@ -5,8 +5,3 @@ the-blue-database:
   image: chariot9/the-blue-database:latest
   ports:
     - "3306:3306"
-the-blue-apache:
-  container_name: the-blue-apache
-  image: chariot9/the-blue-apache:latest
-  ports:
-    - "8000:80"

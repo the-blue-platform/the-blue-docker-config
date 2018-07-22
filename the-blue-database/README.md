@@ -1,5 +1,5 @@
 ## The blue dockers
-* Contains configuration of the blue platform environment
+* Contains configuration of the blue database setting
 
 ## Getting support
 If there are any problems, please feel free to contact to me or create new pull request  
@@ -12,6 +12,6 @@ Push to repository:
 * docker push chariot9/the-blue-database:latest
 Start containers:
 * cd compose
-* docker-compose up -d
+* compose/docker-compose up -d
 ## License
 Created by Trung Vu,  Japan 2018 
